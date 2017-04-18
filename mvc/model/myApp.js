@@ -1,11 +1,13 @@
-var myApp=angular.module('myApp', ['ui.router']);
+var app=angular.module('myApp', ['ui.router']);
 
-myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
+app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
 
 
 	
 
 	console.log('state checking...');
+
+
 	$stateProvider.state('home',{
 		url:'/home',
 		templateUrl:'mvc/view/index1.html',
@@ -17,6 +19,14 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
 
 		url:'/myCourses',
 		templateUrl:'mvc/view/myCourses.html',
+		controller:'myCoursesController',
+		
+	}
+		)
+	.state('login',{
+
+		url:'/login',
+		templateUrl:'mvc/view/login.html',
 		
 	}
 		)
@@ -32,6 +42,8 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
 	.state('explore',{
 		url:'/explore',
 		templateUrl:'mvc/view/explore.html',
+		controller:'exploreController',
+
 
 	})
 	.state('scorecard',{

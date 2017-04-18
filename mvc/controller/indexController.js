@@ -1,4 +1,4 @@
-myApp.controller('indexController',['$scope',function($scope){
+app.controller('indexController',['$scope','$location',function($scope,$location){
 
 		
 		$scope.login=0;
@@ -12,16 +12,7 @@ myApp.controller('indexController',['$scope',function($scope){
 
 
 
-		$scope.showLoginForm=function()
-			{
-				if($scope.login==1)
-				{
-
-				}
-				else
-				$scope.loginForm= !$scope.loginForm;
-			};
-
+		
 		$scope.signIn=function(){
 			console.log('email is '+$scope.emailId);
 
@@ -38,7 +29,7 @@ myApp.controller('indexController',['$scope',function($scope){
 		};
 
 
-		
+
 		if ($scope.login==0)
 		console.log('Not entered in login site..');
 	else
