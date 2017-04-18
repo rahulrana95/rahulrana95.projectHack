@@ -1,0 +1,16 @@
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-demo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70vw;
+	margin-top: 6vw;
+	margin-bottom: 10vw;
+}

@@ -1,0 +1,23 @@
+.social .s-icons li{
+display: inline;
+padding-left: 3vw;
+float: left;
+}
+
+.social p{
+	float: right;
+}
+
+.social
+{
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: auto;
+
+	margin-right: auto;
+	width: 90vw;
+	border:solid red 2px;
+	height: 5vw;
+	background-color:white; 
+
+}

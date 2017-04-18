@@ -1,0 +1,26 @@
+.footer{
+	background-color:grey; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3vw;
+
+}
+.footer .f-1{
+	background-color:white;
+	margin-top: 2vw;
+	text-align: center;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	border-radius: 1vw; 
+	
+}
+
+.footer p{
+	margin-top: 2vw;
+	text-align: center;
+
+}
+
+.footer .copyright{
+	
+}

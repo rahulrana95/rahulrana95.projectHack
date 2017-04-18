@@ -1,0 +1,28 @@
+.product button{
+
+		width: 100% !important;
+		margin-top: 5px;
+}
+
+.product p{
+	font-size: 2.5vw;
+	text-align: center;
+	font: bold;
+}
+
+.product{
+	border: 2px solid #b3a9ae;
+	border-radius:2vw;
+	width: 15vw;
+	height: 25vw;
+	padding: 2vw 2vw 2vw 2vw;
+	margin-right: 2vw;
+	margin-left: 2vw;
+	background-color:rgba(202, 188, 128, 0.76); 
+	margin-top: 10px;
+}
+
+.product img{
+	border: 2px solid black;
+	border-radius:2vw;
+}
