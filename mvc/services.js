@@ -1,28 +1,31 @@
-myApp.service('cart', function(){
+app.service('MainService',['$http', function($http)
+{
 
-			this.totalItems=0;
+			this.login=1;
 			this.price=0;
+			this.info={};
+			//console.log('id is '+id);
+					/*$http.get("user.json").success(function(response)
+					{ 
+					console.log('userinfo called.')
+					this.info=response;
+					console.log(this.info);
 
-			this.updatePrice=function(price)
+
+  					});*/
+			this.islogin=function(username,password)
 				{
-					if(price>=0)
-						{
-							this.price=this.price+price;
-							this.totalItems+=1;
-							return 1;}
-					else 
-						return 0;
+					
+					return 1;
 				};
 
-			this.getPrice=function()
-				{
-					return this.price;
-				};
+			this.userInfo=function(id)
+			{
 
-			this.getItems=function()
-				{
+					return $http.get("user.json");
+  					
 
-					return this.totalItems;
-				}		
+  			};
+					
 
-});
+}]);

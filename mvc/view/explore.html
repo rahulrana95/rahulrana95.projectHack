@@ -1,3 +1,30 @@
 <div ng-controller="exploreController">
-	
+
+
+	<center>	<h5>Available Courses</h5>  </center>
+
+
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Web Development</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Software Engineering</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Economics</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+        
+
+<script>
+  $('.popout').ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+  </script>
+        	
 </div>

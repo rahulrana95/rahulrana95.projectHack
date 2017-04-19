@@ -1,39 +1,35 @@
-app.controller('indexController',['$scope','$location',function($scope,$location){
+app.controller('indexController',['$scope','$location','MainService',function($scope,$location,MainService){
 
 		
-		$scope.login=0;
+		$scope.login=1;
 		$scope.emailId='';
 		$scope.password='';
 		$scope.loginForm=0;
 		$scope.slider=0;
 		$scope.name='Log In';
 
+console.log('indexController running');
 
+
+		if (MainService.login==0)
+		console.log('Not entered in login site..');
+	else{
+
+				$scope.state=MainService.userInfo("1");
+				$scope.state=$scope.state['$$state'];
+
+
+				console.log('entered in login site..');
+
+			}
+
+
+		
+		
 
 
 
 		
-		$scope.signIn=function(){
-			console.log('email is '+$scope.emailId);
-
-					if($scope.emailId=='3rahul4@gmail.com' && $scope.password=='9068390682')
-					{
-						$scope.name='Rahul';
-						$scope.login=1;
-						$scope.loginForm=0;
-						console.log('Login Successful...');
-					}
-					
-
-
-		};
-
-
-
-		if ($scope.login==0)
-		console.log('Not entered in login site..');
-	else
-				console.log('entered in login site..');
 
 
 }]);

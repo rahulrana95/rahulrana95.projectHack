@@ -1,4 +1,4 @@
-Project is an ecomelce comerce website for shoes and clothes.
+Project is an e learning portal website.
 Technlogies used are:
 1-HTML5
 2-CSS3
